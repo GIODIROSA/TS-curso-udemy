@@ -290,7 +290,7 @@ const n = toNumber(null);
 
 /**
  * Optinal chaining operator
- * 
+ *
  * uso de la "?"
  * usuario?.create_at
  * usado tambien en react
@@ -331,6 +331,54 @@ fn5?.();
 /**
  * Nullish coalescing operator
  * tomar valores por defecto en TS
+ *
+ * --- ?? null o vacio sea un valor importante
  */
 
- 
+const difficulty: number | null = 0;
+
+const user2 = {
+  name: "chanchito feliz",
+  difficulty: difficulty ?? 1,
+};
+
+console.log(user2);
+
+/**
+ * Type assertion
+ * para buscar elementos del DOM pero estar seguro que existe y ademas que tipo de valor es
+ *
+ */
+
+// ---V1
+
+const input = document.getElementById("username") as HTMLInputElement;
+
+// ---V2
+
+const input2 = <HTMLInputElement>document.getElementById("username");
+
+// input.value
+
+/**
+ * Type narrowing
+ * varios tipos de datos dentro de una variable
+ * conducirlo por alguno de los cambios establecidos
+ */
+
+function lala(x: string | number) {
+  if (typeof x === "number") {
+    //
+  }
+
+  if (typeof x === "string") {
+    //
+  }
+}
+
+/**
+ * Type Unknown
+ *  reemplazo del tipo any
+ */
+
+

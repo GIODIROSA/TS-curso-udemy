@@ -119,4 +119,17 @@ function getUser(id) {
 }
 const usuario = getUser(2);
 console.log("usuario", usuario === null || usuario === void 0 ? void 0 : usuario.create_at);
+if (usuario && (usuario === null || usuario === void 0 ? void 0 : usuario.create_at)) {
+    console.log(usuario.create_at);
+}
+const arr1 = null;
+arr1 === null || arr1 === void 0 ? void 0 : arr1[0];
+const fn5 = null;
+fn5 === null || fn5 === void 0 ? void 0 : fn5();
+const difficulty = 0;
+const user2 = {
+    name: "chanchito feliz",
+    difficulty: difficulty !== null && difficulty !== void 0 ? difficulty : 1,
+};
+console.log(user2);
 //# sourceMappingURL=index.js.map
